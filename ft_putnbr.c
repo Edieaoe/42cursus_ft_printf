@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: edieliu <edieliu@student.42.fr>            +#+  +:+       +#+        */
+/*   By: yxu <yxu@student.42tokyo.jp>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 10:35:30 by edieliu           #+#    #+#             */
-/*   Updated: 2024/05/06 21:44:37 by edieliu          ###   ########.fr       */
+/*   Updated: 2024/06/12 22:16:06 by yxu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	intlen(int n)
 {
 	long	longnum;
 	int		len;
-	
+
 	longnum = n;
 	len = 0;
 	if (longnum < 0)
