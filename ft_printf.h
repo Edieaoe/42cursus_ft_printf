@@ -6,7 +6,7 @@
 /*   By: yxu <yxu@student.42tokyo.jp>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 10:44:21 by edieliu           #+#    #+#             */
-/*   Updated: 2024/06/12 22:21:34 by yxu              ###   ########.fr       */
+/*   Updated: 2024/06/13 22:03:06 by yxu              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,11 @@
 
 # include <unistd.h>
 # include <stdarg.h>
+# include <stddef.h>
 # include <stdlib.h>
 # include <stdio.h>
 # include <string.h>
-# include <limits.h>
+# include <stdint.h>
 
 int	ft_putchar(char c);
 int	ft_putstr(char *s);
