@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_format.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yxu <yxu@student.42tokyo.jp>               +#+  +:+       +#+        */
+/*   By: yiliu <yiliu@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 21:57:41 by edieliu           #+#    #+#             */
-/*   Updated: 2024/06/12 22:13:53 by yxu              ###   ########.fr       */
+/*   Updated: 2024/06/16 16:30:00 by yiliu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ int	ft_format(va_list args, const char format)
 
 	result_length = 0;
 	if (format == 'c')
-		result_length += ft_putchar(va_arg(args, char));
+		result_length += ft_putchar(va_arg(args, int));
 	if (format == 's')
 		result_length += ft_putstr(va_arg(args, char *));
 	if (format == 'p')
-		result_length += ft_putptr(va_arg(args, void *));
+		result_length += ft_putptr(va_arg(args, uintptr_t));
 	if (format == 'd')
 		result_length += ft_putnbr(va_arg(args, int));
 	if (format == 'i')

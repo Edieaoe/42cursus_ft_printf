@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yxu <yxu@student.42tokyo.jp>               +#+  +:+       +#+        */
+/*   By: yiliu <yiliu@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 10:44:21 by edieliu           #+#    #+#             */
-/*   Updated: 2024/06/13 22:03:06 by yxu              ###   ########.fr       */
+/*   Updated: 2024/06/16 16:39:45 by yiliu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,7 @@
 # include <unistd.h>
 # include <stdarg.h>
 # include <stddef.h>
-# include <stdlib.h>
 # include <stdio.h>
-# include <string.h>
 # include <stdint.h>
 
 int	ft_putchar(char c);

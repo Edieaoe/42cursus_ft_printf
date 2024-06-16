@@ -3,20 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yxu <yxu@student.42tokyo.jp>               +#+  +:+       +#+        */
+/*   By: yiliu <yiliu@student.42tokyo.jp>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/02 22:13:55 by edieliu           #+#    #+#             */
-/*   Updated: 2024/06/13 21:59:10 by yxu              ###   ########.fr       */
+/*   Updated: 2024/06/16 20:28:20 by yiliu            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-// return length?
-// return(write(1, "%", 1))
-// library?
-// x/X unsighed int?
-// s == NULL (null)
 int	ft_printf(const char *str, ...)
 {
 	int		result_length;
@@ -34,7 +29,7 @@ int	ft_printf(const char *str, ...)
 			i++;
 		}
 		else
-			ft_putchar(str[i]);
+			result_length += ft_putchar(str[i]);
 		i++;
 	}
 	va_end(args);
