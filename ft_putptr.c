@@ -40,6 +40,8 @@ void	ft_putptr_rec(uintptr_t n)
 
 int	ft_putptr(uintptr_t n)
 {
+	if (n == 0)
+		return (write(1, "(nil)", 5));
 	write(1, "0x", 2);
 	ft_putptr_rec(n);
 	return (ptrlen(n) + 2);
